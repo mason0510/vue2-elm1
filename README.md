@@ -89,7 +89,7 @@ npm run build
    
 ### 移动端扫描下方二维码
 
-![](https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/elm_ewm.png)
+![](https://github.com/bailicangdu/vue2-elm/tree/master/screenshots/elm_ewm.png)
 
 
 
