@@ -89,7 +89,7 @@ npm run build
    
 ### 移动端扫描下方二维码
 
-![](https://git.oschina.net/mgh_com/vue2-elm/blob/master/screenshots/elm_ewm.png?dir=0&filepath=screenshots%2Felm_ewm.png&oid=c3b8271b00b43de13cfec265cd8c69d65a978606&sha=28e3faf528e07573519acfef59bd2d0901e4fe0b)
+![](http://test.fe.ptdev.cn/elm/screenshots/elm_ewm.png)
 
 
 
