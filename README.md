@@ -165,7 +165,7 @@ npm run build
 
 ### 商铺筛选页
 
-<img src="https://github.com/bailicangdu/vue2-elm/blob/master/screenshots/food.gif" width="365" height="619"/>
+<img src="http://test.fe.ptdev.cn/elm/screenshots/food.gif" width="365" height="619"/>
 
 
 
@@ -176,7 +176,7 @@ npm run build
 
 ### 确认订单页
 
-<img src="http://test.fe.ptdev.cn/elm/screenshots/confirmOrder.gif" width="365" height="619"/>
+<img src="http://test.fe.ptdev.cn/elm/screenshots/order.gif" width="365" height="619"/>
 
 
 ### 搜索页
