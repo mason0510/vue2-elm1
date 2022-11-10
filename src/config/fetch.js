@@ -4,6 +4,7 @@ import {
 
 export default async(type = 'GET', url = '', data = {}, method = 'fetch') => {
 	type = type.toUpperCase();
+	// url = baseUrl + url;
 	url = baseUrl + url;
 
 	if (type == 'GET') {
@@ -35,7 +36,7 @@ export default async(type = 'GET', url = '', data = {}, method = 'fetch') => {
 				value: JSON.stringify(data)
 			})
 		}
-		
+
 		try {
 			var response = await fetch(url, requestConfig);
 			var responseJson = await response.json();
