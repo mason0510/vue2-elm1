@@ -102,7 +102,8 @@
                     this.captchaCodeImg = 'http://test.fe.ptdev.cn/elm/yzm.jpg';
                 }else{
                     let res = await getcaptchas();
-                    this.captchaCodeImg = 'https://mainsite-restapi.ele.me/v1/captchas/' + res.code;
+                  this.captchaCodeImg = 'https://mainsite-restapi.ele.me/v1/captchas/' + res.code;
+                   this.captchaCodeImg = res.code;
                 }
             },
             //获取短信验证码
@@ -166,6 +167,8 @@
                     }
                     //用户名登陆
                     this.userInfo = await accountLogin(this.userAccount, this.passWord, this.codeNumber);
+                    //打印获取的用户信息
+                    console.log("============",this.userInfo);
                 }
                 //如果返回的值不正确，则弹出提示框，返回的值正确则返回上一页
                 if (!this.userInfo.user_id) {
@@ -175,12 +178,12 @@
                 }else{
                     this.RECORD_USERINFO(this.userInfo);
                     this.$router.go(-1);
-                    
+
                 }
             },
             closeTip(){
                 this.showAlert = false;
-            }   
+            }
         }
     }
 

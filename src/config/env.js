@@ -11,8 +11,8 @@ let routerMode;
 const imgBaseUrl = 'https://fuss10.elemecdn.com';
 
 if (process.env.NODE_ENV == 'development') {
-	baseUrl = 'http://localhost:8001';
-	//  baseUrl = '';
+	// baseUrl = 'http://localhost:8001';
+	 baseUrl = 'http://localhost:8001';
 	routerMode = 'hash'
 }else{
 	baseUrl = 'https://mainsite-restapi.ele.me';

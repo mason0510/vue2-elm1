@@ -227,7 +227,9 @@ if (process.env.NODE_ENV == 'development') {
 	 * 账号密码登陆
 	 */
 
-	var accountLogin = (username, password, captcha_code) => fetch('POST', '/v2/login', {username, password, captcha_code});
+	var accountLogin = (username, password, captcha_code) => fetch('POST', '/v2/login', {
+		username, password, captcha_code
+	});
 
 
 	/**

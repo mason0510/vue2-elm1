@@ -32,13 +32,19 @@ export default async(type = 'GET', url = '', data = {}, method = 'fetch') => {
 		}
 
 		if (type == 'POST') {
+			//请求的类型type为POST时，需要将data转换成json字符串
+
 			Object.defineProperty(requestConfig, 'body', {
 				value: JSON.stringify(data)
 			})
 		}
 
 		try {
+			// 打印请求的url requestConfig
+			console.log(url, requestConfig)
 			var response = await fetch(url, requestConfig);
+			//打印response
+			console.log("response",response);
 			var responseJson = await response.json();
 		} catch (error) {
 			throw new Error(error)
